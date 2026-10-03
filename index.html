@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0C0C0C">
+
+<!-- ============ SEO ============ -->
+<title>BOZZ | مطعم برجر — التجمع الأول، القاهرة | مفتوح 24/7</title>
+<meta name="description" content="BOZZ — برجر بريميوم في التجمع الأول، المجاورة التاسعة، القاهرة. طعم كبير، شخصية مختلفة، مفتوح 24/7. اطلب على واتساب.">
+<meta name="keywords" content="BOZZ, برجر, burger, القاهرة, التجمع الأول, First Settlement, Cairo, مطعم برجر, 24 hours">
+<meta name="author" content="BOZZ">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bozz.example.com/">
+
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BOZZ">
+<meta property="og:title" content="BOZZ | مطعم برجر — التجمع الأول، القاهرة | مفتوح 24/7">
+<meta property="og:description" content="برجر بريميوم في التجمع الأول، المجاورة التاسعة، القاهرة. طعم كبير، شخصية مختلفة، مفتوح 24/7.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85">
+<meta property="og:url" content="https://bozz.example.com/">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- ============ Twitter / X ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BOZZ | Premium Burger Restaurant">
+<meta name="twitter:description" content="Big Flavor. Bold Burgers. 24/7 — First Settlement, Cairo.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85">
+
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23E1251B'/><text x='50' y='70' font-size='58' font-family='Arial Black' font-weight='900' fill='%23fff' text-anchor='middle'>B</text></svg>">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loader" role="status" aria-live="polite">
+  <div class="loader-inner">
+    <div class="loader-logo">BOZZ<span>.</span></div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR (desktop) ============ -->
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<a class="skip-link" href="#menu">Skip to menu</a>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" data-logo aria-label="BOZZ"></a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#home" data-i18n="nav.home"></a>
+      <a href="#menu" data-i18n="nav.menu"></a>
+      <a href="#deals" data-i18n="nav.deals"></a>
+      <a href="#why" data-i18n="nav.why"></a>
+      <a href="#location" data-i18n="nav.location"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="lang-switch" class="lang-switch" data-i18n-aria="a11y.langSwitch" aria-live="polite">
+        <span class="lang-opt active" data-lang="ar">AR</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </button>
+
+      <button id="cart-open" class="cart-btn" data-i18n-aria="a11y.cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <path d="M3 6h18"></path>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+
+      <a href="#menu" class="btn btn-primary nav-cta" data-i18n="nav.order"></a>
+
+      <a href="#" class="nav-wa js-wa" data-i18n-aria="a11y.whatsapp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01c-1.75 0-3.47-.47-4.98-1.36l-.36-.21-3.7.97.99-3.61-.23-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.09 1.03 6.95 2.88a9.76 9.76 0 0 1 2.88 6.98c0 5.4-4.4 9.78-9.82 9.78zM20.4 3.6A11.7 11.7 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.09.55 4.13 1.59 5.94L.06 24l6.34-1.66a11.85 11.85 0 0 0 5.65 1.44h.01c6.54 0 11.87-5.34 11.87-11.9 0-3.18-1.24-6.16-3.5-8.41z"/>
+        </svg>
+      </a>
+
+      <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false" data-i18n-aria="nav.openMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mn-top">
+    <a href="#home" class="brand" data-logo></a>
+    <button id="mn-close" class="icon-btn" data-i18n-aria="a11y.close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mn-links" aria-label="Mobile">
+    <a href="#home"><span data-i18n="nav.home"></span></a>
+    <a href="#menu"><span data-i18n="nav.menu"></span></a>
+    <a href="#deals"><span data-i18n="nav.deals"></span></a>
+    <a href="#why"><span data-i18n="nav.why"></span></a>
+    <a href="#location"><span data-i18n="nav.location"></span></a>
+    <a href="#contact"><span data-i18n="nav.contact"></span></a>
+  </nav>
+  <div class="mn-foot">
+    <a href="#menu" class="btn btn-primary btn-block" data-i18n="nav.order"></a>
+    <a href="#" class="btn btn-wa btn-block js-wa" data-i18n="hero.cta3"></a>
+    <p class="mn-hours" data-i18n="hero.badge"></p>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="grid-lines"></span>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge-pill reveal">
+        <span class="dot-pulse"></span>
+        <span data-i18n="hero.badge"></span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line reveal" data-i18n="hero.title"></span>
+      </h1>
+
+      <p class="hero-sub reveal" data-i18n="hero.sub"></p>
+
+      <div class="hero-ctas reveal">
+        <a href="#menu" class="btn btn-primary" data-i18n="hero.cta1"></a>
+        <a href="#menu" class="btn btn-ghost" data-i18n="hero.cta2"></a>
+        <a href="#" class="btn btn-wa js-wa" data-i18n="hero.cta3"></a>
+      </div>
+
+      <ul class="hero-stats reveal">
+        <li><strong>24/7</strong><span data-i18n="hero.stat1"></span></li>
+        <li><strong>100%</strong><span data-i18n="hero.stat2"></span></li>
+        <li><strong>BOZZ</strong><span data-i18n="hero.stat3"></span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-img-wrap">
+        <div class="glow-ring" aria-hidden="true"></div>
+        <picture>
+          <source media="(max-width: 640px)" srcset="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80">
+          <img id="hero-img" src="" alt="" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <div class="hero-sticker" aria-hidden="true"><span>24</span><span>/7</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ BURGER CAROUSEL (infinite) ============ -->
+<section id="signatures" class="section section-carousel">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">BOZZ<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="carousel.title"></h2>
+      <p class="sec-sub" data-i18n="carousel.sub"></p>
+    </div>
+  </div>
+
+  <div class="marquee" id="marquee">
+    <div class="marquee-track" id="carousel-track"></div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="section section-menu">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">MENU<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="menu.title"></h2>
+      <p class="sec-sub" data-i18n="menu.sub"></p>
+    </div>
+
+    <div class="tabs reveal" id="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button class="tab active" role="tab" data-tab="burgers" data-i18n="tab.burgers" aria-selected="true"></button>
+      <button class="tab" role="tab" data-tab="sides" data-i18n="tab.sides" aria-selected="false"></button>
+      <button class="tab" role="tab" data-tab="extras" data-i18n="tab.extras" aria-selected="false"></button>
+      <button class="tab" role="tab" data-tab="drinks" data-i18n="tab.drinks" aria-selected="false"></button>
+    </div>
+
+    <div class="menu-grid reveal" id="menu-grid" role="tabpanel" tabindex="0" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ DEALS ============ -->
+<section id="deals" class="section section-deals">
+  <div class="deals-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">DEALS<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="deals.title"></h2>
+      <p class="sec-sub" data-i18n="deals.sub"></p>
+    </div>
+    <div class="deals-grid reveal" id="deals-grid"></div>
+  </div>
+</section>
+
+<!-- ============ 24/7 ============ -->
+<section id="open-247" class="section section-247">
+  <div class="container s247-inner">
+    <div class="s247-copy reveal">
+      <h2 class="s247-title" data-i18n="s247.title"></h2>
+      <p class="s247-sub" data-i18n="s247.sub"></p>
+      <a href="#menu" class="btn btn-primary btn-lg" data-i18n="s247.cta"></a>
+    </div>
+    <div class="s247-visual reveal" aria-hidden="true">
+      <div class="s247-ring"></div>
+      <img id="s247-img" src="" alt="" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY BOZZ ============ -->
+<section id="why" class="section section-why">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">WHY<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="why.title"></h2>
+      <p class="sec-sub" data-i18n="why.sub"></p>
+    </div>
+
+    <div class="why-grid">
+      <article class="why-card reveal">
+        <span class="why-num">01</span>
+        <div class="why-icon" aria-hidden="true">🔥</div>
+        <h3 data-i18n="why.1.t"></h3>
+        <p data-i18n="why.1.d"></p>
+      </article>
+      <article class="why-card reveal">
+        <span class="why-num">02</span>
+        <div class="why-icon" aria-hidden="true">🌿</div>
+        <h3 data-i18n="why.2.t"></h3>
+        <p data-i18n="why.2.d"></p>
+      </article>
+      <article class="why-card reveal">
+        <span class="why-num">03</span>
+        <div class="why-icon" aria-hidden="true">🌙</div>
+        <h3 data-i18n="why.3.t"></h3>
+        <p data-i18n="why.3.d"></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="section section-reviews">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">REVIEWS<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="reviews.title"></h2>
+      <p class="sec-sub" data-i18n="reviews.sub"></p>
+    </div>
+    <div class="reviews-grid reveal" id="reviews-grid"></div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location" class="section section-location">
+  <div class="container loc-grid">
+    <div class="loc-copy reveal">
+      <span class="eyebrow">LOCATION<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="location.title"></h2>
+      <p class="loc-address" id="loc-address"></p>
+
+      <div class="loc-info">
+        <div class="loc-row">
+          <span class="loc-label" data-i18n="location.hours"></span>
+          <span class="loc-value">24/7</span>
+        </div>
+        <div class="loc-row">
+          <span class="loc-label">BOZZ</span>
+          <span class="loc-value" id="loc-hours-full"></span>
+        </div>
+      </div>
+
+      <div class="loc-ctas">
+        <a class="btn btn-primary" id="btn-directions" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="location.directions"></span>
+        </a>
+        <a href="#" class="btn btn-wa js-wa" data-i18n="location.whatsapp"></a>
+      </div>
+    </div>
+
+    <div class="loc-map reveal">
+      <iframe
+        id="map-frame"
+        title="BOZZ Location Map"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=First%20Settlement%2C%20Al%20Mogawra%209%2C%20Cairo%2C%20Egypt&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+      <div class="map-badge"><span class="dot-pulse"></span>BOZZ · 24/7</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ============ -->
+<section id="social" class="section section-social">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">SOCIAL<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="social.title"></h2>
+      <p class="sec-sub" data-i18n="social.sub"></p>
+    </div>
+    <div class="social-grid reveal" id="social-grid"></div>
+    <div class="social-cta reveal">
+      <a class="btn btn-outline btn-lg" id="social-follow" target="_blank" rel="noopener" data-i18n="social.follow"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <span class="eyebrow">CONTACT<span class="eb-dot">.</span></span>
+      <h2 class="sec-title" data-i18n="contact.title"></h2>
+      <p class="sec-sub" data-i18n="contact.sub"></p>
+      <a href="#" class="btn btn-wa btn-lg js-wa" data-i18n="contact.cta"></a>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand" data-logo></a>
+      <p class="footer-tag" data-i18n="footer.tag"></p>
+      <p class="footer-open"><span class="dot-pulse"></span><span data-i18n="footer.open"></span></p>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.links"></h4>
+      <a href="#menu" data-i18n="nav.menu"></a>
+      <a href="#deals" data-i18n="nav.deals"></a>
+      <a href="#why" data-i18n="nav.why"></a>
+      <a href="#location" data-i18n="nav.location"></a>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact"></h4>
+      <p id="footer-address"></p>
+      <p class="footer-hours">24/7</p>
+      <a href="#" class="footer-wa js-wa" data-i18n="hero.cta3"></a>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.follow"></h4>
+      <div class="footer-social" id="footer-social"></div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p data-i18n="footer.rights"></p>
+    <p class="dev-credit" id="dev-credit"></p>
+  </div>
+</footer>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div id="product-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="pm-name">
+  <div class="modal-card">
+    <button id="pm-close" class="icon-btn modal-close" data-i18n-aria="a11y.close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <img id="pm-img" class="modal-img" src="" alt="" loading="lazy" decoding="async">
+
+    <div class="modal-body">
+      <h3 id="pm-name" class="modal-name"></h3>
+      <p id="pm-desc" class="modal-desc"></p>
+
+      <div class="modal-group">
+        <span class="modal-label" data-i18n="modal.size"></span>
+        <div class="sizes" id="pm-sizes"></div>
+      </div>
+
+      <label class="extra-toggle" id="pm-extra-wrap" for="pm-extra">
+        <input type="checkbox" id="pm-extra">
+        <span class="et-box" aria-hidden="true"></span>
+        <span id="pm-extra-label"></span>
+      </label>
+
+      <div class="modal-row">
+        <div class="modal-group">
+          <span class="modal-label" data-i18n="modal.qty"></span>
+          <div class="qty" id="pm-qty">
+            <button class="qty-btn" data-d="-1" aria-label="−">−</button>
+            <span id="pm-qty-val">1</span>
+            <button class="qty-btn" data-d="1" aria-label="+">+</button>
+          </div>
+        </div>
+        <div class="modal-group modal-total">
+          <span class="modal-label" data-i18n="modal.total"></span>
+          <strong id="pm-total-val">0</strong>
+        </div>
+      </div>
+
+      <button id="pm-add" class="btn btn-primary btn-block btn-lg" data-i18n="modal.add"></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div id="cart-backdrop" class="backdrop"></div>
+<aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+  <div class="cart-head">
+    <h3 id="cart-title" data-i18n="cart.title"></h3>
+    <button id="cart-close" class="icon-btn" data-i18n-aria="a11y.close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cart-items"></div>
+
+  <div class="cart-foot">
+    <div class="cart-sub-row">
+      <span data-i18n="cart.subtotal"></span>
+      <strong id="cart-subtotal">0</strong>
+    </div>
+    <button id="cart-checkout" class="btn btn-wa btn-block btn-lg" data-i18n="cart.checkout"></button>
+    <button id="cart-clear" class="btn btn-ghost btn-sm btn-block" data-i18n="cart.clear"></button>
+  </div>
+</aside>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="#" class="wa-fab js-wa" data-i18n-aria="a11y.whatsapp" aria-label="WhatsApp">
+  <span class="wa-ring" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+    <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01c-1.75 0-3.47-.47-4.98-1.36l-.36-.21-3.7.97.99-3.61-.23-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.09 1.03 6.95 2.88a9.76 9.76 0 0 1 2.88 6.98c0 5.4-4.4 9.78-9.82 9.78zM20.4 3.6A11.7 11.7 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.09.55 4.13 1.59 5.94L.06 24l6.34-1.66a11.85 11.85 0 0 0 5.65 1.44h.01c6.54 0 11.87-5.34 11.87-11.9 0-3.18-1.24-6.16-3.5-8.41z"/>
+  </svg>
+  <span class="wa-label" data-i18n="hero.cta3"></span>
+</a>
+
+<!-- ============ TOAST ============ -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- ============ STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "BOZZ",
+  "description": "Premium burger restaurant in First Settlement, Al Mogawra 9, Cairo, Egypt. Open 24/7.",
+  "servesCuisine": ["Burger", "Fast Food"],
+  "priceRange": "EGP 135-250",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Al Mogawra 9, First Settlement",
+    "addressLocality": "Cairo",
+    "addressCountry": "EG"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "acceptsReservations": false
+}
+</script>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
